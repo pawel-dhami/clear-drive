@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1e2434;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.topbar {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #d7dae0;
+  padding-bottom: 10px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  opacity: 0.75;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dadde8;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  margin: 0 0 12px;
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+}
+
+.row label {
+  display: block;
+  margin: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #c7cdd8;
+  background: #fff;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+}
+
+button.primary {
+  background: #0f5fd9;
+  border-color: #0f5fd9;
+}
+
+button:hover,
+input:focus {
+  outline: none;
+  border-color: #1e62fb;
+}
+
+.health {
+  border-radius: 8px;
+  border: 1px solid #e3e7ef;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.health.green {
+  background: #ecfdf5;
+  border-color: #d1fae5;
+}
+
+.health.yellow {
+  background: #fefce8;
+  border-color: #fef9c3;
+}
+
+.health.red {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+.three-wrap {
+  position: relative;
+  min-height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e9efff;
+  border: 1px solid #d7dae0;
+}
+
+.three-canvas {
+  width: 100%;
+  height: 260px;
+  display: block;
+}
+
+.layer-controls,
+.hotspot-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.timeline {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.event {
+  border: 1px solid #d7dae0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f8f9fb;
+}
+
+.inspection-step,
+.walkaway-result {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f9fafc;
+  border: 1px dashed #c5cbe0;
+  border-radius: 8px;
+}
+
+.footnote {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #d7dae0;
+  color: #5f667b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
